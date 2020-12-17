@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+        <!-- Javascript -->
+        <script src="pomodoro.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="pomodoro.css">        
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome Icon kit -->
+        <script src="https://kit.fontawesome.com/c6c93f661e.js" crossorigin="anonymous"></script>
+
+        <title>Pomodoro Timer</title>
+    </head>
+
+    <body onload="template()">
+        <div class="container">
+            <h1 class="text-center my-5 heading">Pomodoro Timer</h1>
+        </div>
+
+        <div class="container timer">
+            <div class="row">
+                <div class="col-5">
+                    <h4 id="min"></h4>
+                </div>
+
+                <div class="col-2">
+                    <h4>:</h4>
+                </div>
+
+                <div class="col-5">
+                    <h4 id="sec"></h4>
+                </div>                                
+            </div>
+        </div>
+
+        <div>
+            <h3 id="done" class="text-center my-5"></h3>
+        </div>
+
+        <!-- Buttons -->
+        <div class="container d-flex justify-content-center align-items-center my-5">
+            <button class="btn" onclick="start()"><i class="fas fa-play"></i></button>
+
+            <a href="pomodoro.html"><i class="fas fa-redo-alt"></i></a>
+        </div>
+    </body>
+</html>

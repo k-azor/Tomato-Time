@@ -1,0 +1,59 @@
+body {
+    background: #313638;
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+
+.heading {
+    color: #F06543;
+}
+
+.row {
+    width: 100%;
+}
+
+.timer {
+    color: #E0DFD5;
+    text-align: center;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-play, 
+.fa-redo-alt {
+    color: #F09D51;
+    border: 2;
+    background: none;
+    padding: 1rem;
+    border-radius: 2rem;
+    transition: color 0.4s;
+    transition-timing-function: ease;
+}
+
+.fa-play:hover,
+.fa-redo-alt:hover {
+    color: #E0DFD5;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+button:active {
+    outline: none;
+    border: none;
+}
+
+.completed {
+    display: block;
+    padding: 1rem 0;
+    color: #fff;
+    background: #000;
+    border-radius: 0.5rem;
+    transition: 0.5s ease;
+}
